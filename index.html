@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rich Text Editor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="caret.js"></script>
+</head>
+<body>
+	<h1 class="title">Rich Text Editor</h1>
+	<div class="textContainer">
+		<div id="editor">
+			<div class="icons">
+				<!--- BOLD ITALIC UNDERLINE -->
+				<div class="btn">
+					<img src="icons/bold-solid.svg" height="28" onclick="bold()"/>
+				</div>
+				<div class="btn">
+					<img src="icons/italic-solid.svg" height="28" />
+				</div>
+				<div class="btn">
+					<img src="icons/underline-solid.svg" height="28" />
+				</div>
+				<!-- LEFT CENTER RIGHT JUSTIFY -->
+				<div class="btn space">
+					<img src="icons/align-left-solid.svg" height="28" />
+				</div>
+				<div class="btn">
+					<img src="icons/align-center-solid.svg" height="28" />
+				</div>
+				<div class="btn">
+					<img src="icons/align-right-solid.svg" height="28" />
+				</div>
+				<div class="btn">
+					<img src="icons/align-justify-solid.svg" height="28" />
+				</div>
+				<!-- O-LIST U-LIST LINK IMAGE -->
+				<div class="btn space">
+					<img src="icons/list-ol-solid.svg" height="28" />
+				</div>
+				<div class="btn">
+					<img src="icons/list-ul-solid.svg" height="28" />
+				</div>
+				<div class="btn">
+					<img src="icons/link-solid.svg" height="28" />
+				</div>
+				<div class="btn">
+					<img src="icons/image-regular.svg" height="28" />
+				</div>
+
+			</div>
+			<div id="prevText" contenteditable>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<textarea id="tagText"></textarea>
+<script src="script.js"></script>
+</body>
+</html>

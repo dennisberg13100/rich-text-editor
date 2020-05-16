@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+	background: rgb(9,9,9);
+	margin: 0;
+	padding: 0;
+	background: -moz-linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(135,23,138,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(135,23,138,1) 100%);
+	background: linear-gradient(0deg, rgba(9,9,9,1) 0%, rgba(135,23,138,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090909",endColorstr="#87178a",GradientType=1);
+	min-height: 100vh;
+}
+.title {
+	margin: 0px;
+	padding: 20px;
+	font-size:3em;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #eee;
+	text-shadow:1px  1px 1px #000,
+                1px -1px 1px #000,
+                -1px  1px 1px #000,
+                -1px -1px 1px #000,
+                0px 0px 10px #000;
+}
+.textContainer {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	max-width: 800px;
+	margin: auto;
+}
+#editor{
+	border-radius: 4px;
+	overflow: hidden;
+	flex:1;
+	box-shadow: 0px 0px 10px #000;
+}
+#tagText {
+	display:block;
+	margin: auto;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	width: 100%;
+	height: 100%;
+	max-width: 800px;
+	min-height: 200px;
+	resize: none;
+	overflow-y: auto;
+	overflow-x: wrap;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 50px;
+	
+}
+#prevText {
+	cursor: text;
+	background-color: #fff;
+	border: 1px solid #bbb;
+	width: 100%;
+	height: calc(100% - 40px);
+	resize: none;
+	overflow-y: auto;
+	overflow-x: wrap;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	outline: none;
+}
+.icons {
+	width: 100%;
+	background-color: #bbb;
+	display: flex;
+	padding: 2px;
+}
+.icons .btn {
+	height: 32px;
+	width: 32px;
+	padding: 3px;
+	background-color: #ccc;
+	border: 1px solid #999;
+	border-radius: 4px;
+	margin: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 2px #333;
+	cursor: pointer;	
+}
+.icons .space {
+	margin-left: 12px;
+}
+
+.icons .active {
+	background-color: #e1e6ed;
+	box-shadow: 0px 0px 3px #fff;
+	box-shadow: 0px 0px 3px #193b6e;
+}
