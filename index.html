@@ -23,16 +23,16 @@
 					<img src="icons/underline-solid.svg" height="28" />
 				</div>
 				<!-- LEFT CENTER RIGHT JUSTIFY -->
-				<div class="btn space">
+				<div class="btn space" onclick="alignItems('left')">
 					<img src="icons/align-left-solid.svg" height="28" />
 				</div>
-				<div class="btn">
+				<div class="btn" onclick="alignItems('center')">
 					<img src="icons/align-center-solid.svg" height="28" />
 				</div>
-				<div class="btn">
+				<div class="btn" onclick="alignItems('right')">
 					<img src="icons/align-right-solid.svg" height="28" />
 				</div>
-				<div class="btn">
+				<div class="btn" onclick="alignItems('justify')">
 					<img src="icons/align-justify-solid.svg" height="28" />
 				</div>
 				<!-- O-LIST U-LIST LINK IMAGE -->
@@ -51,12 +51,13 @@
 
 			</div>
 			<div id="prevText" contenteditable>
-				</div>
+				
 			</div>
 		</div>
 		
 	</div>
 	<textarea id="tagText"></textarea>
 <script src="script.js"></script>
+<script src="editor.js"></script>
 </body>
 </html>
